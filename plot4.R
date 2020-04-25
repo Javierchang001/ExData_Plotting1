@@ -50,13 +50,11 @@ with(powerc,
 
 ## Plot 3
 with(powerc,
-     plot(Datetime, Sub_metering_1, type = "n", ylab = "Energy sub metering"))
-with(powerc,
-     lines(Datetime, Sub_metering_1, type = "l", col="black"))
-with(powerc,
-     lines(Datetime, Sub_metering_2, type = "l",col="red"))
-with(powerc,
-     lines(Datetime, Sub_metering_3, type = "l", col="blue"))
+     {plot(Datetime, Sub_metering_1, type = "n", ylab = "Energy sub metering")
+     lines(Datetime, Sub_metering_1, type = "l", col="black")
+     lines(Datetime, Sub_metering_2, type = "l",col="red")
+     lines(Datetime, Sub_metering_3, type = "l", col="blue")}
+     )
 legend(
   "topright",
   legend = grep("Sub", colnames(powerc), value = TRUE),
