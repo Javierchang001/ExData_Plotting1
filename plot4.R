@@ -62,7 +62,8 @@ legend(
   legend = grep("Sub", colnames(powerc), value = TRUE),
   col = c("black", "red", "blue"),
   lty = 1,
-  lwd = 2
+  lwd = 2,
+  bty = "n"
 )
 
 ## Plot 4
